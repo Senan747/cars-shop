@@ -50,3 +50,33 @@ export const manufacturers = [
   "NIO",
   "Fisker",
 ];
+
+export const footerLinks = [
+  {
+    title: "About",
+    links: [
+      { title: "How it functions", url: "/" },
+      { title: "Highlighted", url: "/" },
+      { title: "Collaboration", url: "/" },
+      { title: "Business Relationship", url: "/" },
+    ],
+  },
+  {
+    title: "Company",
+    links: [
+      { title: "Occurrences", url: "/" },
+      { title: "Weblog", url: "/" },
+      { title: "Podcast", url: "/" },
+      { title: "Recommend a colleague", url: "/" },
+    ],
+  },
+  {
+    title: "Socials",
+    links: [
+      { title: "Community", url: "/" },
+      { title: "PhotoGram", url: "/" },
+      { title: "Tweets", url: "/" },
+      { title: "Social Network", url: "/" },
+    ],
+  },
+];

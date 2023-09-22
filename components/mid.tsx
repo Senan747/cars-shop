@@ -6,7 +6,7 @@ import Image from "next/image";
 const main = () => {
   const handleScroll = () => {};
   return (
-    <div className="flex flex-col xl:flex-row gap-5 relative z-0 mx-auto p-24">
+    <div className="flex flex-col xl:flex-row gap-5 relative z-0 mx-auto px-24 py-10">
       <div>
         <h1 className="text-5xl font-extrabold">
           Search, book, or rent a car - quickly and easily!

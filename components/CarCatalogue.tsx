@@ -1,10 +1,10 @@
 import { CustomFilter } from ".";
 import { SearchBar } from ".";
-import { Cars} from "."
+import { Cars } from ".";
+import { fetchCars } from "@/utils";
 
 export default async function CarCatalogue() {
-  
-
+  const allCars = await fetchCars();
 
   return (
     <div className="flex w-full px-24 pb-20">
@@ -14,7 +14,11 @@ export default async function CarCatalogue() {
           <SearchBar />
           <CustomFilter />
         </div>
-        <Cars />
+        <div>
+          {allCars?.map((car) => (
+            <Cars car={car} />
+          ))}
+        </div>
       </div>
     </div>
   );

@@ -5,7 +5,7 @@ import Footer from './Footer'
 import CustomFilter from './CustomFilter'
 import SearchBar from "./SearchBar"
 import CarCatalogue from './CarCatalogue'
-import Cars from './Cars'
+import Cars from './Car'
 
 export {
     Mid,

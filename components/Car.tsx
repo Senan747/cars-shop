@@ -1,5 +1,5 @@
 "use client";
-import { use, useState } from "react";
+import { useState } from "react";
 import Image from "next/image";
 import { carProps } from "@/types";
 import { CustomButton } from ".";

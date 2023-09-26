@@ -5,7 +5,7 @@
 @tailwind utilities;
 
 .custom-btn {
-  @apply flex flex-row relative justify-center items-center py-3 px-6 outline-none;
+  @apply flex flex-row relative justify-center items-center py-3 px-6 outline-none max-md:py-1 max-md:px-3 max-md:text-sm;
 }
 
 .car-card {

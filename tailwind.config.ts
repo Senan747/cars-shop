@@ -8,6 +8,35 @@ module.exports = {
   mode: "jit",
   theme: {
     extend: {
+      keyframes: {
+        pulse: {
+          "0%": { opacity: 0 },
+          "50%": { opacity: 0.5 },
+          "100%": { opacity: 1 },
+        },
+        wiggle: {
+          "0%, 100%": { transform: "rotaate(-3deg)" },
+          "50%": { transform: "rotate(3deg)" },
+        },
+        new: {
+          from: { top: "384px" },
+          to: { top: "0px" },
+        },
+        fadeIn: {
+          from: {
+            opacity: 0,
+            transform: "translateY(-10px)",
+          },
+          to: {
+            opacity: 1,
+            transform: "translateY(0)",
+          },
+        },
+      },
+      animation: {
+        pulse: "pulse 0.5s linear",
+        fadeIn: "fadeIn 0.5s linear",
+      },
       fontFamily: {
         inter: ["Inter", "sans-serif"],
       },

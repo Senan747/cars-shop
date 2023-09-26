@@ -21,12 +21,12 @@ const Navbar = () => {
           <p>About</p>
         </div>
         <div className="cursor-pointer group relative">
-          <p>Socials</p>
+          <p onClick={() => setShow(!show)}>Socials</p>
+
           <div
             className={`absolute flex-row ${
-              show ? "flex" : "hidden"
+              show ? "flex" : "max-md:hidden"
             } hidden group-hover:flex bg-primary-blue -bottom-[70px] -left-4 px-5 py-3 gap-1 rounded-xl animate-fadeIn`}
-            onClick={() => setShow(!show)}
           >
             <div>
               <AiOutlineInstagram />{" "}
